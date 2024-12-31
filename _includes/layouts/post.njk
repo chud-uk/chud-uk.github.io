@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+
+---
+
+<article>
+  <header>
+    <h1>{{ title }}</h1>
+    <time datetime="{{ page.date | toISOdate }}">{{ page.date | toISOdate }}</time>
+  </header>
+  {{ content | safe }}
+</article>

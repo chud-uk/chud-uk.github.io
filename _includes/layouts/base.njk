@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="data:image/png;base64,">
+  <meta name="description" content="Someone's blog" />
+  <title>{{ title }}</title>
+  <style>
+    body{
+      margin:1em auto;
+      max-width:30em;
+      padding:0 0.6em;
+      font:1.2em/1.6 sans-serif;
+    }
+    h1,h2,h3 {
+      line-height:1.2;
+    }
+    @media (prefers-color-scheme: dark){
+      body {color:#fff;background:#000}
+      a:link {color:#9cf}
+      a:hover, a:visited:hover {color:#cef}
+      a:visited {color:#c9f}
+    }
+    @media print{
+      body{max-width:none}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/">Chud.uk</a>
+    <a href="/feed.xml">Atom feed</a>
+  </nav>
+  {{ content | safe }}
+</body>
+</html>

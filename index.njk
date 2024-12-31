@@ -1,0 +1,11 @@
+---
+title: Chud.uk
+layout: layouts/base.njk
+---
+
+<ul>
+{%- for post in collections.post | reverse -%}
+  <li>{{ post.data.date | toISOdate }} <a href="{{ post.url | url }}">{{ post.data.title }}</a></li>
+{%- endfor -%}
+</ul>
+
