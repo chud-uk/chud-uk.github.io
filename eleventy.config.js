@@ -16,7 +16,7 @@ export default function (eleventyConfig) {
         language: "en",
         title: "chud.uk",
         subtitle: "Someone's blog.",
-        base: "https://chud-uk.github.io/",
+        base: "https://chud.uk/",
         author: {
             name: "chud-uk",
         }
