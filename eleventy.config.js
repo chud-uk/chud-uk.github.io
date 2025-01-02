@@ -21,5 +21,18 @@ export default function (eleventyConfig) {
             name: "chud-uk",
         }
     }
-})
+  })
+
+  eleventyConfig.addPassthroughCopy({ "./_includes/public/": "/" })
+}
+
+export const config = {
+  markdownTemplateEngine: "njk",
+  htmlTemplateEngine: "njk",
+
+  dir: {
+    input: "content",
+    includes: "../_includes",
+    output: "_site"
+  },
 }
